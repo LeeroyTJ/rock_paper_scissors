@@ -16,7 +16,10 @@ function getComputerChoice() {
 }
 
 function rockPaperScissors(playerSelection, computerSelection) {
+
     let playerInput = prompt("Rock, Paper or Scissors? ");
+    playerInput = playerInput[0].toUpperCase() + playerInput.slice(1).toLowerCase();
+
     let compInput = getComputerChoice();
 
     if (playerInput === compInput) {
